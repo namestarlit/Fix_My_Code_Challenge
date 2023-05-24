@@ -1,0 +1,11 @@
+--- ../../../_clones/0x00-Fix_My_Code_Challenge/4-delete_dnodeint/delete_dnodeint_at_index.c	2023-05-22 22:21:06.449746613 +0300
++++ delete_dnodeint_at_index.c	2023-05-24 18:47:35.862194654 +0300
+@@ -43,7 +43,7 @@
+ 	}
+ 	else
+ 	{
+-		(*head)->prev->prev = (*head)->prev;
++		(*head)->prev->next = (*head)->next;
+ 		free(*head);
+ 		if ((*head)->next)
+ 			(*head)->next->prev = (*head)->prev;
