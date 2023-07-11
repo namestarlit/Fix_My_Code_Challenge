@@ -6,7 +6,12 @@ class Square():
     height = 0
 
     def __init__(self, *args, **kwargs):
-        """Initialization of class object"""
+        """Initialization of class object
+
+        Args:
+            args(tuple): non-key worded parameters.
+            kwargs(dict): key-worded parameters.
+        """
         for key, value in kwargs.items():
             setattr(self, key, value)
 
