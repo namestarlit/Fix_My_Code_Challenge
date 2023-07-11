@@ -19,6 +19,7 @@ class square():
     def __str__(self):
         return "{}/{}".format(self.size, self.size)
 
+
 if __name__ == "__main__":
 
     s = square(12)
