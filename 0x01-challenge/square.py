@@ -1,9 +1,11 @@
 #!/usr/bin/python3
 
 class Square:
+    """Representantion of a square class"""
     side = 0
 
     def __init__(self, *args, **kwargs):
+        """Initialization of square object"""
         for key, value in kwargs.items():
             setattr(self, key, value)
 
@@ -16,6 +18,7 @@ class Square:
         return 4 * self.side
 
     def __str__(self):
+        """String Representantion of Square"""
         return "{}/{}".format(self.side, self.side)
 
 
