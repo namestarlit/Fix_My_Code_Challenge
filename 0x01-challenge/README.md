@@ -1,2 +1,2 @@
-## 0x01. Fix my code
-This has to do with debugging and fixing broken codes
+# Fix-my-code-1
+This project is about debugging and Fixing broken code
