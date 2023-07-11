@@ -8,6 +8,10 @@ from flask import Flask, jsonify, make_response
 app = Flask(__name__)
 app.register_blueprint(app_views)
 
+@app.route('/')
+def root():
+    """Root URL handler"""
+    return jsonify({'status':'API is running'})
 
 @app.errorhandler(404)
 def not_found(error):
